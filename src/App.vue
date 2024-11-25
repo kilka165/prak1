@@ -64,22 +64,34 @@ const totalSum = computed (() => {
 
       <div class="mb-3">
   <label for="name" class="form-label">Название</label>
-  <input type="text" v-model="name"  class="form-control" id="name">
+  <input type="text" v-model="name"  class="form-control" id="name" :class="{'is-invalid': !name}">
+  <div class="valid-feetback">
+    Заполните название продукта
+  </div>
   </div>
 
   <div class="mb-3">
   <label for="date" class="form-label">Дата</label>
-  <input type="date" v-model="date" class="form-control" id="date">
+  <input type="date" v-model="date" class="form-control" id="date" :class="{'is-invalid': !date}">
+  <div class="valid-feetback">
+    Заполните дату продукта
+  </div>
   </div>
 
   <div class="mb-3">
   <label for="count" class="form-label">Количество</label>
-  <input type="number" v-model="count" class="form-control" id="count">
+  <input type="number" v-model="count" class="form-control" id="count" :class="{'is-invalid': !count}">
+  <div class="valid-feetback">
+    Заполните количество продукта
+  </div>
   </div>
 
   <div class="mb-3">
   <label for="price" class="form-label">Цена</label>
-  <input type="number" v-model="price" class="form-control" id="price">
+  <input type="number" v-model="price" class="form-control" id="price" :class="{'is-invalid': !price}">
+  <div class="valid-feetback">
+    Заполните цену продукта
+  </div>
   </div>
   <button type="button" class="btn btn-success" @click="addProduct">Добавить</button>
 
