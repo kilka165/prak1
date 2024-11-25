@@ -37,6 +37,7 @@
     </div>
   </div>
 </div>
+<h4 class="text-end">Общая сумма товаров: 1000$</h4>
 </div>
 </template>
 
